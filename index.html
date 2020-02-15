@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Basic audio File</title>
+<meta charset="utf-8">
+<title>Basic audio File</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<h1>Basic Audio Implementation</h1>
+	<section class="container">
+		<h1>Basic Audio App</h1>
 
-	<audio src="audio/STP_Interstate_Love_Song.mp3" loop></audio>
-
-	<img data-currenttrack="STP_Interstate_Love_Song.mp3" src="images/stp.jpg" alt="Album logo" width="300" height="250" class="trackholder">
-	<img data-currenttrack="Sail.mp3" src="images/stp2.jpg" alt="Album art" width="300" height="250" class="trackholder">
-	<img data-currenttrack="Companion.mp3" src="images/stp3.jpg" alt="Album" width="300" height="250" class="trackholder">
-
-	<div>
-	    <button id="playButton">Play</button>
-		<button id="pauseButton">Pause</button>
-		<button id="rewindButton">Rewind</button>
-	</div>
+		<div class="display">
+			<audio src="audio/STP_Interstate_Love_Song.mp3" loop></audio>
+	
+			<img data-currenttrack="STP_Interstate_Love_Song.mp3" src="images/stp.jpg" alt="Album logo"  class="trackholder">
+			<img data-currenttrack="Sail.mp3" src="images/stp2.jpg" alt="Album art"  class="trackholder">
+			<img data-currenttrack="Companion.mp3" src="images/stp3.jpg" alt="Album" class="trackholder">
+		</div>
+	
+		<div class="buttons">
+			<button id="playButton">Play</button>
+			<button id="pauseButton">Pause</button>
+			<button id="rewindButton">Rewind</button>
+		</div>
+	</section>
 
 	<script src="js/main.js"></script>
 
